@@ -1,0 +1,106 @@
+{
+    "disallowCommaBeforeLineBreak": null,
+    "disallowDanglingUnderscores": true, //todo: when we get to newer version, this should include _this
+    "disallowEmptyBlocks": true,
+    "disallowFunctionDeclarations":  true,
+    "disallowImplicitTypeConversion": [ "string" ],
+    "disallowKeywordsOnNewLine": null,
+    "disallowKeywords": [ "with" ],
+    "disallowMixedSpacesAndTabs": true,
+    "disallowMultipleLineBreaks": true,
+    "disallowMultipleLineStrings": true,
+    "disallowMultipleVarDecl": true,
+    "disallowOperatorBeforeLineBreak":  true,
+    "disallowPaddingNewlinesInBlocks": true,
+    "disallowQuotedKeysInObjects": "allButReserved",
+    "disallowSpaceAfterBinaryOperators": null,
+    "disallowSpaceAfterKeywords": [ "for", "while", "do", "switch" ],
+    "disallowSpaceAfterLineComment": true,
+    "disallowSpaceAfterObjectKeys": null,
+    "disallowSpaceAfterPrefixUnaryOperators": true,
+    "disallowSpaceBeforeBinaryOperators": null,
+    "disallowSpaceBeforeBlockStatements": null,
+    "disallowSpaceBeforePostfixUnaryOperators": true,
+    "disallowSpacesInAnonymousFunctionExpression": {
+        "beforeOpeningCurlyBrace": true
+    },
+    "disallowSpacesInConditionalExpression": null,
+    "disallowSpacesInFunctionDeclaration": null,
+    "disallowSpacesInFunctionExpression": {
+        "beforeOpeningRoundBrace": true
+    },
+    "disallowSpacesInNamedFunctionExpression": null,
+    "disallowSpacesInsideArrayBrackets": null,
+    "disallowSpacesInsideObjectBrackets": null,
+    "disallowSpacesInsideParentheses": null,
+    "disallowTrailingComma": null,
+    "disallowTrailingWhitespace": true,
+    "disallowYodaConditions": true,
+    "maximumLineLength": 160,
+    "requireAlignedObjectValues": "skipWithFunction",
+    "requireAnonymousFunctions":  true,
+    "requireBlocksOnNewline": true,
+    "requireCamelCaseOrUpperCaseIdentifiers": "ignoreProperties",
+    "requireCapitalizedConstructors": true,
+    "requireCommaBeforeLineBreak": false,
+    "requireCurlyBraces": [
+                        "if",
+                        "else",
+                        "for",
+                        "while",
+                        "do",
+                        "try",
+                        "catch",
+                        "case",
+                        "default"
+                    ],
+    "requireDollarBeforejQueryAssignment":  true,
+    "requireDotNotation": true,
+    "requireKeywordsOnNewLine": [ "else" ],
+    "requireLineBreakAfterVariableAssignment":  true,
+    "requireLineFeedAtFileEnd": true,
+    "requireMultipleVarDecl": true,
+    "requireNewlineBeforeBlockStatements":  true,
+    "requireOperatorBeforeLineBreak": false,
+    "requirePaddingNewlinesInBlocks": true,
+    "requireParenthesesAroundIIFE": true,
+    "requireSemicolons":  true,
+    "requireSpaceAfterBinaryOperators": null,
+    "requireSpaceAfterKeywords": [ "if", "else", "return", "try", "catch" ],
+    "requireSpaceAfterLineComment": true,
+    "requireSpaceAfterObjectKeys": false,
+    "requireSpaceAfterPrefixUnaryOperators": null,
+    "requireSpaceBeforeBinaryOperators": true,
+    "requireSpaceBeforeBlockStatements": true,
+    "requireSpaceBeforePostfixUnaryOperators": null,
+    "requireSpacesInAnonymousFunctionExpression": {
+        "beforeOpeningRoundBrace": true
+    },
+    "requireSpacesInCallExpression":  false,
+    "requireSpacesInConditionalExpression": true,
+    "requireSpacesInForStatement":  true,
+    "requireSpacesInFunctionDeclaration": {
+        "beforeOpeningRoundBrace": true,
+        "beforeOpeningCurlyBrace": true
+    },
+    "requireSpacesInFunctionExpression": {
+        "beforeOpeningCurlyBrace": true
+    },
+    "requireSpacesInNamedFunctionExpression": {
+        "beforeOpeningRoundBrace": true,
+        "beforeOpeningCurlyBrace": true
+    },
+    "requireSpacesInsideArrayBrackets": "allButNested",     // when we get newer version, this should be false
+    "requireSpacesInsideObjectBrackets": "allButNested",    // when we get newer version, this should be false
+    "requireSpacesInsideParentheses": "allButNested",       // when we get newer version, this should be false
+    "requireTrailingComma": false,
+    "safeContextKeyword": ["_this"],
+    "validateIndentation": 4,
+    "validateJSDoc": {
+        "checkParamNames": true,
+        "requireParamTypes": true
+    },
+    "validateLineBreaks": "LF",
+    "validateParameterSeparator": ", ",
+    "validateQuoteMarks": "'"
+}
