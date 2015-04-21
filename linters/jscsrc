@@ -20,9 +20,7 @@
     "disallowSpaceAfterLineComment": true,
     "disallowSpaceAfterObjectKeys": true,
     "disallowSpaceAfterPrefixUnaryOperators": true,
-    "disallowSpaceBeforeBinaryOperators": [
-        ","
-    ],
+    "disallowSpaceBeforeBinaryOperators": null, // when we get newer version, we want it to be [","],
     "disallowSpaceBeforeBlockStatements": null,
     "disallowSpaceBeforePostfixUnaryOperators": true,
     "disallowSpacesInAnonymousFunctionExpression": {
