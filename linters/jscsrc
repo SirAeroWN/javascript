@@ -100,21 +100,21 @@
     "requireSpaceBeforeBlockStatements": true,
     "requireSpaceBeforePostfixUnaryOperators": null,
     "requireSpacesInAnonymousFunctionExpression": {
-        "beforeOpeningRoundBrace": true
+        "beforeOpeningRoundBrace": false
     },
     "requireSpaceBetweenArguments": true,
     "requireSpacesInCallExpression": false,
     "requireSpacesInConditionalExpression": true,
     "requireSpacesInForStatement": true,
     "requireSpacesInFunctionDeclaration": {
-        "beforeOpeningRoundBrace": true,
+        "beforeOpeningRoundBrace": false,
         "beforeOpeningCurlyBrace": true
     },
     "requireSpacesInFunctionExpression": {
         "beforeOpeningCurlyBrace": true
     },
     "requireSpacesInNamedFunctionExpression": {
-        "beforeOpeningRoundBrace": true,
+        "beforeOpeningRoundBrace": false,
         "beforeOpeningCurlyBrace": true
     },
     "requireSpacesInsideArrayBrackets": "allButNested", // when we get newer version, this should be false
