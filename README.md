@@ -262,11 +262,17 @@
 
 ## Functions
   - Function names:
-  -- "public" function:
-  --- camelCase
+  For "public" functions (that other modules might call) you should specify the function name as camelCase
   ```javascript
   // anonymous function expression
   var myPublicFunction = function() {
+    return true;
+  };
+  ```
+  For "private" functions (that belong only to the module) you should specify the function name as _camelCase
+  ```javascript
+  // anonymous function expression
+  var _myPrivateFunction = function() {
     return true;
   };
   ```
