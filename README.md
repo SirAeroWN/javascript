@@ -965,24 +965,24 @@
 
 ## Commas
 
-  - Leading commas: **Yes and no. Debate still going on. Personally prefer comma at the beginning**
+  - Leading commas: **Nope.**
 
     ```javascript
-    // not bad
+    // bad
     var story = [
         once
       , upon
       , aTime
     ];
 
-    // not bad
+    // good
     var story = [
       once,
       upon,
       aTime
     ];
 
-    // not bad
+    // bad
     var hero = {
         firstName: 'Bob'
       , lastName: 'Parr'
@@ -990,7 +990,7 @@
       , superPower: 'strength'
     };
 
-    // not bad
+    // good
     var hero = {
       firstName: 'Bob',
       lastName: 'Parr',
