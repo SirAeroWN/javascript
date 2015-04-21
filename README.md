@@ -627,6 +627,16 @@
     ```
 
   - For more information see [Truth Equality and JavaScript](http://javascriptweblog.wordpress.com/2011/02/07/truth-equality-and-javascript/#more-2108) by Angus Croll.
+  - When having a multi-line if statement, start the line with an operator; this is a more readable style
+    ```javascript
+    if (a === 1
+        && b === 3
+        && c !== 7) {
+      // true
+      return true;
+    }
+    ```
+  
 
 **[⬆ back to top](#table-of-contents)**
 
