@@ -53,7 +53,7 @@
     "iterator": false, // true: Tolerate using the `__iterator__` property
     "lastsemic": false, // true: Tolerate omitting a semicolon for the last statement of a 1-line block
     "laxbreak": true, // true: Tolerate possibly unsafe line breakings
-    "laxcomma": true, // true: Tolerate comma-first style coding
+    "laxcomma": false, // true: Tolerate comma-first style coding
     "loopfunc": false, // true: Tolerate functions being defined in loops
     "multistr": false, // true: Tolerate multi-line strings
     "proto": false, // true: Tolerate using the `__proto__` property
@@ -79,5 +79,10 @@
     "yui": false, // Yahoo User Interface
 
     // Custom Globals
-    "globals": { "angular": false, "Modernizr" :  true } // additional predefined global variables
+    "globals": {
+        "angular": false,
+        "Modernizr": true,
+        // we need to move this to translations, but keeping this here for now
+        "textErrorGenericResource": true
+    } // additional predefined global variables
 }
