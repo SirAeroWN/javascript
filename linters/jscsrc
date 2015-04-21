@@ -1,7 +1,5 @@
 {
-    /**
-    *   Adapted from https://github.com/jscs-dev/node-jscs/blob/master/presets/airbnb.json
-    */
+    // Adapted from https://github.com/jscs-dev/node-jscs/blob/master/presets/airbnb.json
 
     "disallowCommaBeforeLineBreak": null,
     "disallowDanglingUnderscores": true, //todo: when we get to newer version, this should include _this
