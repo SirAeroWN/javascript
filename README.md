@@ -261,6 +261,16 @@
 
 
 ## Functions
+  - Function names:
+  -- "public" function:
+  --- camelCase
+  ```javascript
+  // anonymous function expression
+  var myPublicFunction = function() {
+    return true;
+  };
+  ```
+
 
   - Function expressions:
 
