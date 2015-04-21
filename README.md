@@ -763,12 +763,12 @@
 
 ## Whitespace
 
-  - Use soft tabs set to 2 spaces.
+  - Use soft tabs set to 4 spaces.
 
     ```javascript
     // bad
     function() {
-    ∙∙∙∙var name;
+    ∙∙var name;
     }
 
     // bad
@@ -778,7 +778,7 @@
 
     // good
     function() {
-    ∙∙var name;
+    ∙∙∙∙var name;
     }
     ```
 
@@ -948,24 +948,24 @@
 
 ## Commas
 
-  - Leading commas: **Nope.**
+  - Leading commas: **Yes and no. Debate still going on. Personally prefer comma at the beginning**
 
     ```javascript
-    // bad
+    // not bad
     var story = [
         once
       , upon
       , aTime
     ];
 
-    // good
+    // not bad
     var story = [
       once,
       upon,
       aTime
     ];
 
-    // bad
+    // not bad
     var hero = {
         firstName: 'Bob'
       , lastName: 'Parr'
@@ -973,7 +973,7 @@
       , superPower: 'strength'
     };
 
-    // good
+    // not bad
     var hero = {
       firstName: 'Bob',
       lastName: 'Parr',
