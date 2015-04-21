@@ -1,8 +1,12 @@
 {
+    /**
+    *   Adapted from https://github.com/jscs-dev/node-jscs/blob/master/presets/airbnb.json
+    */
+
     "disallowCommaBeforeLineBreak": null,
     "disallowDanglingUnderscores": true, //todo: when we get to newer version, this should include _this
     "disallowEmptyBlocks": true,
-    "disallowFunctionDeclarations":  true,
+    "disallowFunctionDeclarations": true,
     "disallowImplicitTypeConversion": [ "string" ],
     "disallowKeywordsOnNewLine": null,
     "disallowKeywords": [ "with" ],
@@ -10,63 +14,85 @@
     "disallowMultipleLineBreaks": true,
     "disallowMultipleLineStrings": true,
     "disallowMultipleVarDecl": true,
-    "disallowOperatorBeforeLineBreak":  true,
+    "disallowOperatorBeforeLineBreak": true,
     "disallowPaddingNewlinesInBlocks": true,
     "disallowQuotedKeysInObjects": "allButReserved",
     "disallowSpaceAfterBinaryOperators": null,
     "disallowSpaceAfterKeywords": [ "for", "while", "do", "switch" ],
     "disallowSpaceAfterLineComment": true,
-    "disallowSpaceAfterObjectKeys": null,
+    "disallowSpaceAfterObjectKeys": true,
     "disallowSpaceAfterPrefixUnaryOperators": true,
-    "disallowSpaceBeforeBinaryOperators": null,
+    "disallowSpaceBeforeBinaryOperators": [
+        ","
+    ],
     "disallowSpaceBeforeBlockStatements": null,
     "disallowSpaceBeforePostfixUnaryOperators": true,
     "disallowSpacesInAnonymousFunctionExpression": {
-        "beforeOpeningCurlyBrace": true
+        "beforeOpeningRoundBrace": true
     },
     "disallowSpacesInConditionalExpression": null,
-    "disallowSpacesInFunctionDeclaration": null,
+    "disallowSpacesInFunctionDeclaration": {
+        "beforeOpeningRoundBrace": true
+    },
     "disallowSpacesInFunctionExpression": {
         "beforeOpeningRoundBrace": true
     },
-    "disallowSpacesInNamedFunctionExpression": null,
-    "disallowSpacesInsideArrayBrackets": null,
+    "disallowSpacesInNamedFunctionExpression": {
+        "beforeOpeningRoundBrace": true
+    },
+    "disallowSpacesInsideArrayBrackets": true,
     "disallowSpacesInsideObjectBrackets": null,
-    "disallowSpacesInsideParentheses": null,
-    "disallowTrailingComma": null,
+    "disallowSpacesInsideParentheses": true,
+    "disallowTrailingComma": true,
     "disallowTrailingWhitespace": true,
     "disallowYodaConditions": true,
     "maximumLineLength": 160,
     "requireAlignedObjectValues": "skipWithFunction",
-    "requireAnonymousFunctions":  true,
-    "requireBlocksOnNewline": true,
-    "requireCamelCaseOrUpperCaseIdentifiers": "ignoreProperties",
+    "requireAnonymousFunctions": true,
+    "requireBlocksOnNewline": 1, //true,
+    "requireCamelCaseOrUpperCaseIdentifiers": true, // "ignoreProperties",
     "requireCapitalizedConstructors": true,
-    "requireCommaBeforeLineBreak": false,
+    "requireCommaBeforeLineBreak": true,
     "requireCurlyBraces": [
-                        "if",
-                        "else",
-                        "for",
-                        "while",
-                        "do",
-                        "try",
-                        "catch",
-                        "case",
-                        "default"
-                    ],
-    "requireDollarBeforejQueryAssignment":  true,
+        "if",
+        "else",
+        "for",
+        "while",
+        "do",
+        "try",
+        "catch",
+        "case",
+        "default"
+    ],
+    "requireDollarBeforejQueryAssignment": true,
     "requireDotNotation": true,
     "requireKeywordsOnNewLine": [ "else" ],
-    "requireLineBreakAfterVariableAssignment":  true,
+    "requireLineBreakAfterVariableAssignment": true,
     "requireLineFeedAtFileEnd": true,
     "requireMultipleVarDecl": true,
-    "requireNewlineBeforeBlockStatements":  true,
+    "requireNewlineBeforeBlockStatements": true,
     "requireOperatorBeforeLineBreak": false,
+    "requirePaddingNewLinesAfterBlocks": true,
     "requirePaddingNewlinesInBlocks": true,
+    "requirePaddingNewLinesBeforeLineComments": {
+        "allExcept": "firstAfterCurly"
+    },
     "requireParenthesesAroundIIFE": true,
-    "requireSemicolons":  true,
-    "requireSpaceAfterBinaryOperators": null,
-    "requireSpaceAfterKeywords": [ "if", "else", "return", "try", "catch" ],
+    "requireSemicolons": true,
+    "requireSpaceAfterBinaryOperators": true,
+    "requireSpaceAfterKeywords": [
+        "if",
+        "else",
+        "for",
+        "while",
+        "do",
+        "switch",
+        "case",
+        "return",
+        "try",
+        "catch",
+        "typeof"
+    ],
     "requireSpaceAfterLineComment": true,
     "requireSpaceAfterObjectKeys": false,
     "requireSpaceAfterPrefixUnaryOperators": null,
@@ -76,9 +102,10 @@
     "requireSpacesInAnonymousFunctionExpression": {
         "beforeOpeningRoundBrace": true
     },
-    "requireSpacesInCallExpression":  false,
+    "requireSpaceBetweenArguments": true,
+    "requireSpacesInCallExpression": false,
     "requireSpacesInConditionalExpression": true,
-    "requireSpacesInForStatement":  true,
+    "requireSpacesInForStatement": true,
     "requireSpacesInFunctionDeclaration": {
         "beforeOpeningRoundBrace": true,
         "beforeOpeningCurlyBrace": true
@@ -90,11 +117,11 @@
         "beforeOpeningRoundBrace": true,
         "beforeOpeningCurlyBrace": true
     },
-    "requireSpacesInsideArrayBrackets": "allButNested",     // when we get newer version, this should be false
-    "requireSpacesInsideObjectBrackets": "allButNested",    // when we get newer version, this should be false
-    "requireSpacesInsideParentheses": "allButNested",       // when we get newer version, this should be false
+    "requireSpacesInsideArrayBrackets": "allButNested", // when we get newer version, this should be false
+    "requireSpacesInsideObjectBrackets": "allButNested", // when we get newer version, this should be false
+    "requireSpacesInsideParentheses": "allButNested", // when we get newer version, this should be false
     "requireTrailingComma": false,
-    "safeContextKeyword": ["_this"],
+    "safeContextKeyword": "_this",
     "validateIndentation": 4,
     "validateJSDoc": {
         "checkParamNames": true,
