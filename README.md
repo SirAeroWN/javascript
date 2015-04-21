@@ -1545,6 +1545,9 @@
     // good
     $sidebar.find('ul').hide();
     ```
+    
+  - For `data` attributes (properties), use `.data(propertyName)` instead of `.attr(data-property-name)`
+  This gives you proper type casting and accesses the jQuery data object instead of having to retrieve it from the DOM.
 
 **[⬆ back to top](#table-of-contents)**
 
