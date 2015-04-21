@@ -262,6 +262,7 @@
 
 ## Functions
   - Function names:
+  
   For "public" functions (that other modules might call) you should specify the function name as camelCase
   ```javascript
   // anonymous function expression
