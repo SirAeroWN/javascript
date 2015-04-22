@@ -81,8 +81,6 @@
     // Custom Globals
     "globals": {
         "angular": false,
-        "Modernizr": true,
-        // we need to move this to translations, but keeping this here for now
-        "textErrorGenericResource": true
+        "Modernizr": true
     } // additional predefined global variables
 }
