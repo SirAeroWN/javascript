@@ -28,6 +28,7 @@
   1. [Events](#events)
   1. [Modules](#modules)
   1. [jQuery](#jquery)
+  1. [Resources / Translations / Localizations](#resourcesTranslations)
   1. [ECMAScript 5 Compatibility](#ecmascript-5-compatibility)
   1. [Testing](#testing)
   1. [Performance](#performance)
@@ -1551,6 +1552,46 @@
 
 **[⬆ back to top](#table-of-contents)**
 
+## <a name="resourcesTranslations"></>Resources / Translations / Localizations
+
+  - Use function `AddResource` in both `BaseUserControl` and `BaseCustomer` page to add resources (translations) to the client side. They will be available in `$.systemDefaults.resources.<nameSpace>.resourceName`
+    - `nameSpace` is usually the name of the class with initial lower case letter. It can be overridden via `ResourceNameSpace`
+    - all non-alphanumeric characters will always be removed from the `nameSpace` and the first letter will be made lowercase
+  - There is a set of defined generic messages that can be fund in `$.systemDefaults.resources.generic`
+    - messageSuccess
+    - messageError
+    - processing
+    - loading
+    - new
+    - search
+    - delete
+  
+
+  ```csharp
+  // C#
+  // Add a string variable that holds the message for when the delete button is clicked on a user that must be removed through the Enterprise Users page
+  this.AddResource("messageCannotDeleteUserTooltip", GetLocalResourceObject("txtCannotDeleteUserTooltipMessage.Text").ToString());
+
+  // Add a string variable for when the page is unable to load the users through the AJAX calls
+  this.AddResource("errorLoadingUsers", GetLocalResourceObject("ErrorLoadingUsersText").ToString());
+
+  // Add a string variable for the tooltip over the resend button
+  this.AddResource("tooltipResendUserCode", GetLocalResourceObject("txtResendUserCode").ToString());
+  ```
+    
+    
+  ```javascript
+  // JavaScript
+  // will output the resource for messageCannotDeleteUserTooltip in usersControl namespace
+  console.log($.systemDefaults.resources.usersControl.messageCannotDeleteUserTooltip;
+  
+  // generic message - generic error message
+  // this will output the generic error message
+  console.log($.systemDefaults.resources.generic.messageError);
+  ```
+
+
+**[⬆ back to top](#table-of-contents)**
 
 ## ECMAScript 5 Compatibility
 
