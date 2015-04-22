@@ -1552,7 +1552,7 @@
 
 **[⬆ back to top](#table-of-contents)**
 
-## <a name="resourcesTranslations"></>Resources / Translations / Localizations
+## <a name="resourcesTranslations"></a>Resources / Translations / Localizations
 
   - Use function `AddResource` in both `BaseUserControl` and `BaseCustomer` page to add resources (translations) to the client side. They will be available in `$.systemDefaults.resources.<nameSpace>.resourceName`
     - `nameSpace` is usually the name of the class with initial lower case letter. It can be overridden via `ResourceNameSpace`
