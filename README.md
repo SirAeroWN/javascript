@@ -1557,7 +1557,7 @@
   - Use function `AddResource` in both `BaseUserControl` and `BaseCustomer` page to add resources (translations) to the client side. They will be available in `$.systemDefaults.resources.<nameSpace>.resourceName`
     - `nameSpace` is usually the name of the class with initial lower case letter. It can be overridden via `ResourceNameSpace`
     - all non-alphanumeric characters will always be removed from the `nameSpace` and the first letter will be made lowercase
-  - There is a set of defined generic messages that can be fund in `$.systemDefaults.resources.generic`
+  - There is a set of defined generic messages that can be found in `$.systemDefaults.resources.generic`
     - messageSuccess
     - messageError
     - processing
