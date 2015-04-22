@@ -1,4 +1,4 @@
-[![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/airbnb/javascript?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
+[![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/mm2ha/javascript?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
 # Alarm.com JavaScript Style Guide() {
 
