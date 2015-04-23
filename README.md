@@ -1526,6 +1526,17 @@
       });
     }
     ```
+    
+  - For any form controls on the page cache them in `this.controls` object
+  
+    ```javascript
+    // in _init
+    this.controls = {};
+    
+    // later somewhere (maybe in _initControls)
+    this.controls.mySelect = this.$element.find('select.my-select');
+    this.controls.myPropertyArea = this.$element.find('input.property-area');
+    ```
 
   - For DOM queries use Cascading `$('.sidebar ul')` or parent > child `$('.sidebar > ul')`. [jsPerf](http://jsperf.com/jquery-find-vs-context-sel/16)
   - Use `find` with scoped jQuery object queries.
